@@ -1,9 +1,20 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { css } from '@emotion/react'
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav
+      css={css`
+        padding: 1rem;
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      `}
+    >
       <ul>
         <li>
           <Link to="/">Home</Link>
