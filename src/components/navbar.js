@@ -6,8 +6,6 @@ const Navbar = () => {
   return (
     <nav
       css={css`
-        padding: 1rem;
-
         ul {
           display: flex;
           justify-content: space-between;
@@ -24,6 +22,9 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/products">Products</Link>
+        </li>
+        <li>
+          <Link to="/examples">Examples</Link>
         </li>
       </ul>
     </nav>
